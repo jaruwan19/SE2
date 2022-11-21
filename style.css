@@ -1,0 +1,34 @@
+/* select all */
+/* *{
+    font-size: 40px;
+} */
+/* class */
+.class-a{
+    /* background-color: palevioletred; */
+    background-color: var(--var1);
+    color: white;
+}
+
+#this-id{
+    background-color: aquamarine;
+}
+/* selector [2]*/
+
+/* CSS[3] variables */
+:root{
+    --var1:rgb(21, 112, 100); 
+}
+
+/* CSS[4] Responsive, media , viewport */
+@media  screen and (max-width: 600px) and (min-width:300px){
+    body{
+        color: blueviolet;
+    }
+}
+
+
+/* CSS[5] Display Type , Flexbox */
+.flex-naja{
+    display: flex;
+    flex-direction: row;
+}

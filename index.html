@@ -1,12 +1,29 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <!-- CSS[5] -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>หัวข้อ</title>
+    <!-- CSS [1]-->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="javascript.js">
+
+   
+    </script> 
+    
+    <!-- // <script async src="javascript.js" > -->
 </head>
 <body>
+    <!-- class จะเจาะจงทุก element หลายอย่างได้-->
+    <!-- id ใช้ได้กับอย่างเดียว -->
     <div class="class1"> 
         ส่วนนี้คือคอนเทนต์
     </div>
+
+    <script>
+        alert("OK")
+    </script>
 
     <h1>size1</h1>
     <h2>size2</h2>
@@ -45,7 +62,7 @@
         <li>หัวข้อย่อยรายการที่2</li>
     </ul>
 
-    <table border="2">
+    <table border="2" class="tab-class">
         <thead>
             <tr>
                 <td>Head 1</td>
@@ -65,5 +82,35 @@
             </tr>
         </tfoot>
     </table>
+    <br>
+    <form action="/submit.php" id="this-id">
+        <div>
+            <label for="uid">ใส่ไอดีตรงนี้</label>
+        <input type="text" id="uid">
+        </div>
+        <div>
+            <label for="color">ใส่สีตรงนี้</label>
+        <input type="color" id="color">
+        </div>
+        <div>
+           <label for="time">ใส่เวลาตรงนี้</label>
+        <input type="datetime-local" id="time"> 
+        </div>
+        
+    </form>
+
+    <div class="class-a">
+        <p>This is a div</p> 
+    </div>
+    <div class="flex-naja">
+        <input type="button" id="flex-naja"value="Continue"> 
+        <input type="button" id="flex-naja"value="Submit"> 
+        <input type="button" id="flex-naja"value="cancle"> 
+    </div>
 </body>
+
+<script>
+    document.write("ส่วนนี้เขียนโดย javaScript");
+    console.log("ส่วนนี้อยู่ใน Debugger");
+</script>
 </html>
