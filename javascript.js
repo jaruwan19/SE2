@@ -10,8 +10,20 @@ a[1] = "array";
 //     console.log("เท่ากัน");
 // }
 
-//var , let ค่าจะเหมือนๆกันต่างกันตรงพวก scope
-//var scope จะกว้างกว่า let
+//var , let ค่าจะเหมือนๆกันต่างกันตรงพวก scope, functon scope , ใช้ก่อนประกาศได้
+//var scope จะกว้างกว่า let , block scope , ใช้ก่อนประกาศไม่ได้
+
+//request ฝั่ง sever
+async function requestToSever (){
+    //POST
+    fetch("post_form.php", {method: 'POST', body:"parameter"});
+    //การรันแบบเป็นลำดับ อะซิงโคนัส
+    let ret = await fetch("post_form.php", {method: 'POST', body:"parameter"});
+    //GET
+    fetch("post_form.php?parameter",{method: 'GET'})
+    let re2 = await fetch("post_form.php", {method: 'POST', body:"parameter"});
+}
+
 
 let nametwo = "จารุวรรณ";
 var object = {size: 10, name : "Dedo" };
